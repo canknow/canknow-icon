@@ -1,5 +1,5 @@
 <template>
-  <span class="icon" :classes="classes">
+  <span class="icon" :classes="classes" @click="onClick">
     <svg>
       <use :xlink:href="iconName"></use>
     </svg>
@@ -32,6 +32,11 @@ export default {
     iconName () {
       const postfix = this.theme === 'outlined' ? '' : `-${this.theme}`;
       return `#icon-${this.name}${postfix}`;
+    }
+  },
+  methods: {
+    onClick () {
+      this.$emit('click');
     }
   }
 };
