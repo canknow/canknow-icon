@@ -1,0 +1,11 @@
+*.sh
+node_modules
+dist
+*.md
+*.css
+*.scss
+*.woff
+*.ttf
+*.eot
+build
+babel.config.js

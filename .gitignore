@@ -1,0 +1,8 @@
+node_modules/
+dist
+examples/src/assets/icons/svg/canknow
+npm-debug.log
+.idea
+.idea/workspace.xml
+
+/yarn.lock
